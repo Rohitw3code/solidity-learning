@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "todoId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "task",
+						"type": "string"
+					}
+				],
+				"name": "TodoAdded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_task",
+						"type": "string"
+					}
+				],
+				"name": "addTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllTodo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "task",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "completd",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct TodoList.Todo[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getTodo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "todos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "task",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "completd",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Todo.sol": "TodoList"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Todo.sol": {
+			"keccak256": "0xfc2daefe50190b136939fc90fae14b6307358b7578a6e2a0eda54db477468ca8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3df45fa804624ace6ff95c47bd7170ce36f3af195b5c9ce4a95571132d65c940",
+				"dweb:/ipfs/QmNi6MsbihvheVLYcDaBYsjxpkFnrUYJjuTCsqfXNjTTsW"
+			]
+		}
+	},
+	"version": 1
+}
